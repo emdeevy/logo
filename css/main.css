@@ -12,9 +12,15 @@ a {
     color: inherit;
 }
 
+:root {
+    --background: rgb(23, 25, 35);
+    --svg-width: 500px;
+    --svg-height: 500px;
+}
+
 /* Setting a default background color */
 body {
-    background-color: rgb(23, 25, 35);
+    background-color: var(--background);
 }
 
 .container {
@@ -28,8 +34,8 @@ body {
 
 .logo-wrapper {
     position:relative;
-    height:680px;
-    width:680px;
+    height: calc(0.70 * max(var(--svg-height), var(--svg-height)) + max(var(--svg-height), var(--svg-height)));
+    width: calc(0.70 * max(var(--svg-height), var(--svg-height)) + max(var(--svg-height), var(--svg-height)));
     margin:0 auto;
 }
 
@@ -41,7 +47,7 @@ body {
 
 .logo {
     position: relative;
-    height:400px;
-    width:400px;
-    margin:140px 0 0 140px;
+    height: var(--svg-height);
+    width: var(--svg-width);
+    margin: calc(0.35 * max(var(--svg-height), var(--svg-height))) 0 0 calc(0.35 * max(var(--svg-height), var(--svg-height)));
 }
