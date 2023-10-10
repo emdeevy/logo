@@ -1,0 +1,47 @@
+/* Resetting default margins and paddings */
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adding some basic styles for links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Setting a default background color */
+body {
+    background-color: rgb(23, 25, 35);
+}
+
+.container {
+    position:relative;
+}
+
+.logo-container {
+    position: relative;
+    margin-top: 150px;
+}
+
+.logo-wrapper {
+    position:relative;
+    height:680px;
+    width:680px;
+    margin:0 auto;
+}
+
+.attack-container {
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+
+.logo {
+    position: relative;
+    height:400px;
+    width:400px;
+    margin:140px 0 0 140px;
+}
